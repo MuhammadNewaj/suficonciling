@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DIRI Sufi Counselling Center</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+    <!-- DaisyUI and Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- customizing -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
     <header>
+        <div class=" bg-base-200 min-h-screen flex justify-between content-center items-center">
+            <div class="mr-24">
+                <img class="min-h-screen" src="images/banner-images.png" alt="">
+            </div>
+            <div class="flex-1 mx-32">
+                <form class="">
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Email</span>
+                        </label>
+                        <input type="email" placeholder="email" class="input input-bordered" required />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">
+                            <span class="label-text">Password</span>
+                        </label>
+                        <input type="password" placeholder="password" class="input input-bordered" required />
+                        <label class="label">
+                            <a href="/admin.html" class="label-text-alt link link-hover">Login as a admin (Temporary
+                                button)</a>
+                        </label>
+                    </div>
+                    <div class="form-control mt-6">
+                        <a href="/admin.html" class="btn btn-primary">Login</a>
+                        <!-- <button class="btn btn-primary">Login</button> -->
+                    </div>
+                </form>
+            </div>
+
+        </div>
 
     </header>
-    <main>
+    <main></main>
+    <footer></footer>
 
-    </main>
-    <footer>
-        
-    </footer>
-    
 </body>
+
 </html>
